@@ -1,0 +1,38 @@
+Today's Agenda
+---------------
+2.30PM to 3.30PM -Handling Alert
+3.30PM to 4.30PM -Handling Frames
+4.30PM to 4.50PM -Classroom
+4.50PM to 5.00PM -Break
+5.00PM to 6.00PM -Handling Multiple tabs
+6.00PM to 6.20PM -Classroom
+6.20PM to 6.30PM -Wrap up
+
+Alert -->message/dialog box 
+     - can not be ignored 
+     - it is not inspectable
+     - javascript code
+
+     modal Alert
+      -can not be ignored 
+     - it is not inspectable
+
+        Types of modal alert
+          simple alert -->one button to click on (ok)
+          confirmation alert -->to take decision on the message (ok/cancel)
+          prompt alert -->to take decision as well as allows to type in the message box
+
+     non-modal alert
+       -sweet alert -can be inspectable and cannot be ignored
+
+
+       ok -->accept
+       cancel-->dismiss
+
+       page.on -->applicable for all the alert messages poping up from the application
+            type of the alert
+            type in the alertbox
+            accept 
+
+        page.once is applicable only to the particular alert message 
+
