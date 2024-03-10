@@ -1,0 +1,56 @@
+Today's Agenda
+---------------
+2.30PM to 3.30PM -Upload/DownloadFile
+3.30PM to 3.45PM -Classroom
+3.45PM to 5.00PM -Read test data
+5.00PM to 5.20PM -Classroom
+5.20PM to 5.30PM -Break
+5.30PM to 6.00PM -Session storage
+6.00PM to 6.20PM -Classroom
+6.20PM to 6.30PM -Playwright Config walk through
+To read data into the test script
+csv
+json
+env
+
+csv -comma separated values
+npm install csv-parser
+
+create a file with .csv as extention
+  testcaseid,username,password -->header
+  tc001,demoCSR,crmsfa  -->actual test data
+
+create a file as spec.ts
+
+use const data=parse(fs.readFileSync(path.join(_dirname,'finame.csv')),{
+   columns:true
+})
+  
+  for(const record of data){
+    test()
+  }
+
+to read json file
+---------------
+create a file with extention .json
+[{
+key:value
+},
+{
+
+}]
+
+Environment variables
+
+-->multiple environments -QA,Dev,Staging
+
+
+create a file with .env 
+.env.QA
+.env.staging
+Step:1 -->intall dotenv   -->npm install dotenv
+step:2-->import
+
+
+
+from terminal -->variableName=environment npx playwright ..
