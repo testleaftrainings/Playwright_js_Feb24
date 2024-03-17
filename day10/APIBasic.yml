@@ -1,0 +1,6 @@
+<!-- Home Assignment:
+----------------
+1. Create new change_request 
+2. Retrive the newly created change request 
+3. Modify "short_description" for the newly created change request using put / patch
+4. Delete the newly created change request using Delete -->
