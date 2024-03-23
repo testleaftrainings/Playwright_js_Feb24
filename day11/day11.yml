@@ -1,0 +1,90 @@
+Today's Agenda:
+-------------
+2.30PM to 3.15PM- Keyboard & Mouse Actions
+3.15PM to 3.30PM -Classroom
+3.30PM to 4.30PM- Codegen & Tracing
+4.30PM to 4.45PM -Classroom 
+4.45PM to 5.00PM -Break
+5.00PM to 6.00PM -Test Runner
+6.00PM to 6.20PM -Custom Fixture
+6.20PM to 6.30PM -Wrap up
+
+Playwright.config.ts 
+    -testDir-->customise the folder for the execution of test functions
+    -reporter -->['html',{open:'always'}]
+    -forbidOnly -->ignore the test.only 
+    -Multiple Config.ts files 
+      npx playwright test -c filename.config.ts
+
+    Keyboard /Mouse actions  
+
+    enter, tab, shift, control
+    hover,dbclick, right,drag and drop,scroll
+
+    launch the snap deal application
+    Hover on Men's Fashion
+    Click on Sports shoes
+    Click on training Shoes
+    hover on first reslulting training shoe
+    click on quick view 
+
+
+codegen -->code generator -->record and playback
+
+Goto Extentions
+Playwright
+install
+
+Test Explorer
+Playwright
+Record a test
+
+
+shortcut -->ctrl shit p -->type rec-->Record a test 
+-->default file as test-1.spec.ts --> copy the code and paste 
+
+using terminal
+npx playwright codegen -copies the script automatically to the created spec file
+default file as test-2.spec.ts
+
+To generate the code under the specfied file (spec file)
+npx playwright codegen -o tests/day11/filename.spec.ts
+
+page.screenshot({path:'filename'})
+
+
+test('description',async()=>{
+
+})
+
+Playwright Test (Test Runner)
+testInfo -->information about the current test()
+worker
+custom hooks
+custom fixtures
+
+test.only -->execute one particular test() from the specfile
+
+test -->createLead, EditLead, Duplicate EditLead
+testGroup->CreateAccount
+
+test.skip() -->skip the test from the execution
+test.fixme()-->any bugs/issue with the script/application module ->will not run the Test
+
+Pre-Condtions & postconditions
+
+test.beforeAll() -->runs once before all the test()
+test.beforeEach()-->before each test()
+test.afterAll() -->runs once after all the test()
+test.afterEach()-->after each test()
+
+test.describe-->Grouping the testcase
+test.describe.configure(mode:'parallel'/retries:2)
+test.describe.only/fixme /skip
+
+Execution from terminal using test title
+grep-->global regular expression print
+npx playwright test -grep "testtitle"
+
+test('test title @Reg',()=>{})
+test('test title',{tag:'Smoke'}),()=>{})
