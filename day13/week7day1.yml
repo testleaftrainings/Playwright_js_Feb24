@@ -1,0 +1,109 @@
+Today's Agenda
+--------------
+2.30PM to 3.45PM -Class,Constructor and Object
+3.45PM to 4.00PM -Classroom
+4.00PM to 4.45PM -Accessmodifier
+4.45PM to 5.00PM -Break
+5.00PM to 5.45PM -Inheritance
+5.45PM to 6.00PM -Classroom
+6.00PM to 6.30PM -Abstaction -Abstractclass
+
+OOPs -->Object Oriented Programming
+ ---------------------------------
+
+ Modularity
+ Readability
+ Resuability
+ Easy maintanence-->More Structural
+
+ context().storageState() --->store the session cookies
+                          ->reuse
+
+
+classes  
+-------
+      -bluePrint 
+      -map to define the properties/behaviour of an object
+      -no memory gets allocated -properties/behaviour
+
+
+      Vehicle
+        -color
+        -brand
+        -gearsystem
+Maruthi
+Honda
+Kia
+
+
+classroom
+---------
+create a ts file 
+create a class
+ define the properties-->page, usernamefield,passwordfield,loginbutton
+ Initialize the properites with constructor and pass page as an arg
+ create 3 methods to fill the username ,password and click on login butoon function
+export the class
+create spec.ts file
+ use test fn 
+ launch the application
+ create object for the ts class
+ using object call all the methods
+object 
+====================
+AccessModifier
+------------
+ permission /visibility of property/method in a 
+ 
+ public -anywhere in the class/outside the class can be assessed
+ private -can be access only within the class
+ to give access the other classess
+  -->encapsulation ->binding the data/methods together inside the class
+ --> get and set 
+ readonly-->like constant after initilaization
+ static -->having single reference can be shared across the classes
+
+ protected-can be accessed in the subclass-->inherited class
+ super -->parent class properties/methods
+ const-->final -constant values
+ this-->to represent the current class method /properties
+
+faker -->generate fake data
+Inheritance
+   -acquring the property of a class having IS -A relationship
+   -two classes should be connected using the keyword "extends"
+   -Parent to child
+   -Parent--BaseClass
+   -child -derived class/subclass
+  single inheritance
+  Multilevel inheritance
+  one class --other class
+  one class->other class -->another class
+  GrandParent 
+      Parent
+        Child
+
+POM --> Page object model
+page objects -->navigation of application
+
+login-->homepage-->Salespage-->Leads-->CreateLead -->verificationPage
+separate classes for the navigation and testfunction for the execution
+
+
+test(()=>{
+page.got
+page.fill
+page.fill
+page.click
+page.click
+
+
+})
+
+
+
+
+
+
+
+ 
