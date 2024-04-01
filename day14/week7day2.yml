@@ -1,0 +1,74 @@
+Today's Agenda
+--------------
+2.30PM to 3.00PM -Abstaction -Abstractclass
+3.00PM to 3.30PM -Interface
+3.30PM to 4.00PM -POM Implementation
+4.00PM to 4.30PM -Classroom
+4.30PM to 4.45PM -Break
+4.45PM to 5.30PM -RetryLogic
+5.30PM to 6.00PM -Custom Reporter
+6.00PM to 6.30PM -Api Integration
+--------------------------------------
+
+Abstraction-hiding the implementation
+            -extact
+            -ideas
+            -Reasearch field
+            -Mobile -->Internal working of any feature in a mobile 
+            -House 
+
+            -->generating ideas /know the thing what requires 
+                  -->how to acheive it we dono
+
+            Interface -->as like a class but it give you 100% abstraction
+            Abstract class-->0 to 100% abstraction
+
+            Hiding the complex behaviour of an application and showing relavant information to the user
+
+            Abstract class -->0 to 100%
+              ->partially built house
+              ->complete design(Method without logic) and implementation (Method with logic)
+
+
+To implement abstract class 
+
+abstract class tesReporter
+ abstract start();
+
+ abstract class extends another abstract class
+ class extends abstract class
+
+Interface -->100% abstraction 
+             -->completely design (without have any logic)
+          interface extends other interface
+          class implements interface
+          abstract class implements interface
+PageObjectModel:
+---------------
+ 3 folders
+   Pages -->create methods respect to the pages
+   tests -->execution based on test function
+   utils -->creating wrapper methods
+   
+Utils folder-->create ts file
+try and catch the exception
+ try -->actual script to be executed-->if any exception
+   catch-->exception will be catched -->reported 
+     -->will not resolve issue 
+     -->helps to continue the execution
+     -->throw --> custom exception created by the user to stop the execution in catch block
+
+pages -->implement respective methods
+
+LoginPage -->doLogin-->login functionality
+HomePage-->clikOnApplauncher -->extends LoginPage
+
+
+
+
+
+
+to run in debug
+Add breakpoints in line of codes
+run the command from terminal
+npx playwright test filename.spec.ts  --debug
