@@ -1,0 +1,51 @@
+Today's Agenda
+--------------
+2.30PM to 3.450PM -Custom retry Logic
+3.45PM to 4.00PM -Break
+4.00PM to 5.15PM -Jira Integration
+5.15PM to 5.40PM -Classroom
+5.40PM to 6.20PM -Github Actions/CI intergration
+
+any action is not performed
+ -->apply timeout 
+ -->command to retry 
+
+ click -->
+ retry Logic
+ click along with wait
+
+ allure report:
+ install the allure report
+ set with config.ts
+ cmd to open
+
+step:1 install allure report
+npm i -D @playwright/test allure-playwright
+npm install -g allure-commandline
+add the reporter in playwright config.ts
+ ['allure-playwright',{outputfile:'reportName'}]
+ allure generate mymyallure_report -o allure-report
+allure open allure-report
+
+Jira Integration:
+endpointurl
+ https://domain.atlassian.net/rest/api/3/issue/ -->create the issue in jira
+ authorization -->username
+               -->jira api key
+                   -->Under user profile -->manageAccount-->security-->Api tokens
+                   axios -->node-js -->common api library
+                   jira-client -->libraries
+
+        to install libraries --> npm install axios
+        create  a ts file 
+
+Github actions -->running script with git
+Need git account 
+Create new repo in git
+install github Actions in Vscode -->extention
+(authorize with git credentials)
+sourceControl-->commit the code 
+            -->add the remote repo 
+            -->commit and push
+
+Terminal -->git init
